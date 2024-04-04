@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: caw
+  name: caw
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: caw
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: caw
+    spec:
+      containers:
+      - image: alpine
+        name: caw
+        command: ["sh", "-c", "while true; do echo 'I am a caw and I say \"muuuuu\"'; sleep 1; done"]
