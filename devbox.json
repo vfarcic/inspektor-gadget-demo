@@ -5,7 +5,8 @@
     "kubectl@1.29.2",
     "bat@0.24.0",
     "krew@0.4.4",
-    "yq-go@4.43.1"
+    "yq-go@4.43.1",
+    "jq@1.7.1"
   ],
   "shell": {
     "init_hook": [
